@@ -75,7 +75,7 @@ func main() {
 	do_request := func() {
 		res, err := http.DefaultClient.Do(req)
 		if err != nil {
-			fmt.Println(err.Error())
+			// fmt.Println(err.Error())
 			return
 		}
 		defer res.Body.Close()
